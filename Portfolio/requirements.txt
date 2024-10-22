@@ -1,5 +1,6 @@
 streamlit
 pandas
-plotly
-folium
+fsspec
 streamlit_folium
+folium
+plotly
