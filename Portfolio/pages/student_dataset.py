@@ -7,7 +7,7 @@ from streamlit_folium import folium_static
 
 st.markdown("<h1 style='font-size: 40px;'>Analysis of Middle School Student Enrollment</h1>", unsafe_allow_html=True)
 
-data = pd.read_csv("C://Users//hupar//Documents//Efrei//M1//Data Visualization//Portfolio//pages//fr-en-college-effectifs-niveau-sexe-lv.csv", sep=";", on_bad_lines='skip', encoding="utf-8")
+data = pd.read_csv("Portfolio//pages//fr-en-college-effectifs-niveau-sexe-lv.csv", sep=";", on_bad_lines='skip', encoding="utf-8")
 years = data['Rentrée scolaire'].unique()
 selected_year = st.selectbox("Select a Year", years)
 data_filtered = data[data['Rentrée scolaire'] == selected_year]
