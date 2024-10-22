@@ -39,7 +39,7 @@ with st.container():
 
 st.markdown("##### Total Number of Students per Department")
 
-with open('C://Users//hupar//Documents//Efrei//M1//Data Visualization//Portfolio//pages//departements.geojson', encoding='utf-8') as f:
+with open('Portfolio//pages//departements.geojson', encoding='utf-8') as f:
     geojson_deps = json.load(f)
 
 data_filtered["Code département"] = data_filtered["Code département"].astype(str).str.zfill(3)
